@@ -37,23 +37,19 @@ We apply the model's "Unembedding" matrix to the residual stream at **intermedia
 
 ##  Architecture
 
-The project follows a modern **Client-Server** architecture:
-
 - **Backend (Python/FastAPI)**:
   - Uses `TransformerLens` (HookedTransformer) for model manipulation.
   - Implements PyTorch hooks to intercept and modify activations.
   - Exposes REST APIs for inference and metrics computation.
-  - Deployed via Docker on Hugging Face Spaces.
 
 - **Frontend (React/Vite)**:
   - Built with React 18, Tailwind CSS, and Recharts.
   - Provides an interactive 12x12 Grid for head selection.
   - Visualizes token probabilities and attention impacts.
-  - Deployed on Vercel.
-
+  
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### Prerequisites
 - Python 3.8+
@@ -97,6 +93,8 @@ The frontend will start at `http://localhost:5173`.
 ---
 
 ##  Deployment
+[Web Link](https://attentionsurgery.onrender.com/)
+
 
 
 ---
@@ -114,6 +112,6 @@ The frontend will start at `http://localhost:5173`.
 
 ---
 
-## 📄 License
+##  License
 
 MIT License. See [LICENSE](LICENSE) for details.
