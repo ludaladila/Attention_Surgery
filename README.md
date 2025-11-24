@@ -68,7 +68,7 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
-pip install -r attention_surgery/requirements.txt
+pip install -r requirements.txt
 
 # Start the server
 uvicorn attention_surgery.api:app --reload --port 8000
