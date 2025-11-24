@@ -71,7 +71,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 # Start the server
-uvicorn attention_surgery.api:app --reload --port 8000
+uvicorn api:app --reload --port 8000
 ```
 The backend will start at `http://localhost:8000`.
 
